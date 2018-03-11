@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.amirbrb.ukholo" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://ukholo-app.com/ns/1.0">
+    <name>ukholo</name>
+    <description>
+        ukholo
+    </description>
+    <author email="support@ukholo-app.com" href="http://ukholo-app.com">
+        ukholo team
+    </author>
+    <content src="index.html" />
+    <plugin name="phonegap-plugin-push" spec="~1.10.5" />
+    <plugin name="cordova-plugin-splashscreen" spec="~4.0.3" />
+    <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
+	<plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
+	
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="15" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreenDelay" value="1500" />
+	<preference name="fullscreen" value="false" />
+    <platform name="android">
+        <icon src="static/img/icons/icon.png" />
+        <splash src="static/img/icons/icon.png" />
+    </platform>
+    <platform name="ios">
+        <icon platform="ios" src="static/img/icons/icon.png" />
+        <splash height="480" platform="ios" src="static/img/icons/icon.png" width="320" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
